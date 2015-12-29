@@ -1,0 +1,77 @@
+@import 'ui-variables';
+
+.ui-switch-component {
+  box-sizing: border-box;
+  position: relative;
+  width: 40px;
+  height: 24px;
+  background-color: @button-border-color;
+  border-radius: 12px;
+  transition: background-color .3s;
+  cursor: pointer;
+
+  .background {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 38px;
+    height: 22px;
+    background-color: @button-background-color;
+    border-radius: 11px;
+    transition: top .3s, left .3s, width .3s, height .3s, background-color .1s;
+  }
+
+  .toggler {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px;
+    height: 22px;
+    background-color: lighten(@button-background-color, 15%);
+    border-radius: 11px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: left .3s, background-color .3s;
+  }
+
+  &.on {
+    background-color: @ui-site-color-1;
+
+    .background {
+      top: 11px;
+      left: 19px;
+      width: 1px;
+      height: 1px;
+    }
+
+    .toggler {
+      left: 17px;
+
+      background-color: @button-background-color;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+
+    &.on {
+      background-color: desaturate(@ui-site-color-1, 100%);
+    }
+  }
+
+  &.in-progress {
+    background-color: @ui-site-color-2;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%, rgba(255, 255, 255, .3) 75%, transparent 75%, transparent);
+    background-size: 35px 35px;
+    animation: ui-switch-in-progress 1s linear infinite;
+  }
+}
+
+@keyframes ui-switch-in-progress {
+  from {
+    background-position: 35px 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}

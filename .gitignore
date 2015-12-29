@@ -1,0 +1,17 @@
+build/
+node_modules/
+npm-debug.log
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+*.lock
+*.sock
+*.pid
+*.sw?
+.unison*
+._*
+*~

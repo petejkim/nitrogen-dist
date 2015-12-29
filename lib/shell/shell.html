@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nitrogen</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body, .terminal-container, .terminal {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background: black;
+        color: #e5e5e5;
+        overflow: hidden;
+      }
+
+      .terminal-container {
+        position: relative;
+      }
+
+      .terminal {
+        box-sizing: border-box;
+        border: 2px solid transparent;
+      }
+
+      .terminal div {
+        margin: 0;
+        padding: 0;
+      }
+
+      .terminal span {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+
+      .terminal-row {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .terminal-input {
+        position: absolute;
+        top: 0;
+        left: -1000%;
+        background: rgba(255, 255, 255, 0.75);
+        color: #000;
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+
+      .terminal-input.visible {
+        left: 0%;
+      }
+
+      .terminal-size-indicator {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        color: #000;
+        padding: 0 3px;
+        font-size: 11px;
+      }
+
+      .terminal-screen-keys {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .terminal-screen-keys button {
+        width: 40px;
+        height: 34px;
+        padding: 0;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid rgba(96, 96, 96, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-left: 4px;
+      }
+
+      .terminal-screen-keys button:active, .terminal-screen-keys button.active {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+    <style id='term-font'>
+      body {
+        font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+      }
+
+      .terminal {
+        line-height: 1.35;
+        font-size: 13px;
+      }
+    </style>
+    <script src='atom://nitrogen/lib/shell/term.js'></script>
+    <script src='atom://nitrogen/lib/shell/shell.js'></script>
+  </head>
+
+  <body>
+  </body>
+</html>

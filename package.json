@@ -1,0 +1,38 @@
+{
+  "name": "nitrogen",
+  "main": "./lib/nitrogen",
+  "version": "0.0.9",
+  "description": "Nitrogen: Nitrous meets Atom",
+  "keywords": [],
+  "repository": "https://github.com/nitrous-io/nitrogen-dist",
+  "license": "LicenseRef-LICENSE",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.0.2",
+    "classnames": "^2.2.0",
+    "flux": "^2.1.1",
+    "immutable": "^3.7.5",
+    "jquery": "^2.1.4",
+    "lockfile": "^1.0.1",
+    "md5": "^2.0.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "babel-eslint": "^4.0.10",
+    "del": "^2.2.0",
+    "eslint": "^1.2.0",
+    "eslint-plugin-babel": "^2.1.1",
+    "eslint-plugin-no-empty-blocks": "0.0.2",
+    "eslint-plugin-react": "^3.2.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.3.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.4",
+    "gulp-uglify": "^1.5.1"
+  }
+}

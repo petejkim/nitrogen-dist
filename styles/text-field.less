@@ -1,0 +1,17 @@
+@import "ui-variables";
+
+.secure-text-field {
+  &::shadow {
+    .line {
+      color: transparent;
+    }
+
+    .line:before {
+      color: @text-color;
+      position: relative;
+      display: inline-block;
+      top: 1px;
+      width: 0;
+    }
+  }
+}

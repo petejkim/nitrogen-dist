@@ -1,0 +1,43 @@
+@import "ui-variables";
+@import "./variables";
+
+nitrogen-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+atom-workspace-axis.horizontal {
+  padding-top: @toolbarHeight + 1px;
+}
+
+.nitrogen-toolbar-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: @base-background-color;
+  width: 100%;
+  height: @toolbarHeight + 1px;
+  border-bottom: 1px solid @base-border-color;
+  -webkit-user-select: none;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: @toolbarHeight + 1px;
+    height: @toolbarHeight;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: @text-color-selected;
+    background-color: @background-color-selected;
+    border-right: 1px solid @base-border-color;
+  }
+
+  .left, .right {
+    display: flex;
+    flex-direction: row;
+  }
+}

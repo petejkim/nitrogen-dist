@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nitrogen</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: #ececec;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+      }
+
+      body, label, input {
+        font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+        font-size: 12px;
+      }
+
+      #nsync-log {
+        resize: none;
+        border: 1px solid #c5c5c5;
+        box-shadow: none;
+        overflow: auto;
+        font-family: sans-serif;
+        flex-grow: 1;
+        margin-bottom: 10px;
+        font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+      }
+
+      #nsync-log:active, #nsync-log:focus {
+        outline: none;
+      }
+
+      #nsync-log-scrollback {
+        display: flex;
+        align-items: center;
+      }
+
+      #nsync-log-scrollback-field {
+        flex-grow: 1;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <textarea id='nsync-log' readonly></textarea>
+    <div id='nsync-log-scrollback'>
+      <label for='nsync-log-scrollback-field'>Scrollback Buffer:</label>
+      <input id='nsync-log-scrollback-field' type='text' value='200' />
+    </div>
+  </body>
+</html>

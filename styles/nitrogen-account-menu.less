@@ -1,0 +1,33 @@
+@import "ui-variables";
+@import "./variables";
+
+.nitrogen-account-menu-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: @toolbarHeight;
+  height: @toolbarHeight;
+
+  .gravatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #777;
+    background-size: cover;
+    transition: box-shadow .1s;
+    text-align: center;
+  }
+
+  .login-btn {
+    height: 26px;
+    margin-right: 3px;
+  }
+
+  .nitrogen-dropdown-component {
+    .nitrogen-dropdown-menu {
+      position: fixed;
+      right: 0;
+      top: @toolbarHeight;
+    }
+  }
+}

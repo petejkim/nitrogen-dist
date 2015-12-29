@@ -1,0 +1,19 @@
+{
+  "context-menu": {
+    "atom-text-editor": [{}]
+  },
+  "menu": [
+    {
+      "label": "Help",
+      "submenu": [
+        {
+          "label": "Nitrogen Welcome Guide",
+          "command": "nitrogen:show-welcome"
+        },
+        {
+          "type": "separator"
+        }
+      ]
+    }
+  ]
+}
