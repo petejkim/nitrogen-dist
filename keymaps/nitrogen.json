@@ -1,3 +1,17 @@
 {
-  "atom-workspace": {}
+  "atom-workspace": {},
+  ".nitrogen-webview webview": {
+    "tab": "native!",
+    "shift-tab": "native!",
+    "backspace": "native!",
+    "left": "native!",
+    "up": "native!",
+    "down": "native!",
+    "right": "native!",
+    "pagedown": "native!",
+    "pageup": "native!",
+    "shift-left": "native!",
+    "shift-right": "native!",
+    "delete": "native!"
+  }
 }

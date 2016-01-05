@@ -1,0 +1,30 @@
+@import 'ui-variables';
+
+.nitrogen-preview-menu-component {
+  margin: 0 -1px;
+
+  button {
+    position: relative;
+    border-radius: 0;
+    padding-right: 24px;
+
+    &:active {
+      z-index: 1;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 9px;
+      right: 9px;
+      border: solid 4px transparent;
+      border-top-color: @text-color;
+    }
+  }
+
+  .nitrogen-dropdown-menu {
+    margin-top: -1px;
+    border-radius: 0 0 3px 3px;
+  }
+}
