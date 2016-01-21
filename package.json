@@ -10,7 +10,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.0.2",
     "classnames": "^2.2.0",
     "flux": "^2.1.1",
     "immutable": "^3.7.5",

@@ -1,0 +1,27 @@
+@import "ui-variables";
+
+.nitrogen-feedback-component {
+  h2 {
+    margin: 8px 0 10px 0;
+  }
+
+  atom-text-editor {
+    margin: 10px 0;
+
+    &.subject-field {
+      padding: 4px;
+    }
+
+    &.message-field {
+      border: 1px solid @input-border-color;
+      border-radius: @component-border-radius;
+      background: @input-background-color;
+      padding: 4px;
+      min-height: 8em;
+    }
+  }
+
+  .btn-wrap-group {
+    margin-top: 1em;
+  }
+}

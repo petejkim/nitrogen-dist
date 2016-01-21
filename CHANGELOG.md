@@ -1,3 +1,6 @@
+## 0.1.3
+* Various bug fixes
+
 ## 0.1.2
 * Added preview
 
