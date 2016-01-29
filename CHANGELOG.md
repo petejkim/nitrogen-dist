@@ -1,3 +1,6 @@
+## 0.1.4
+* Various bug fixes for windows
+
 ## 0.1.3
 * Various bug fixes
 
