@@ -1,3 +1,6 @@
+## 0.1.6
+* Various bug fixes
+
 ## 0.1.5
 * Show remaining usage for free users
 * Adds support for GitHub Login
