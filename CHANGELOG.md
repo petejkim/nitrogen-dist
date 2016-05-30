@@ -1,3 +1,6 @@
+## 0.1.7
+* Fixed shared containers bugs
+
 ## 0.1.6
 * Various bug fixes
 

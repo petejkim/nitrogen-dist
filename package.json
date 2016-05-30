@@ -1,7 +1,7 @@
 {
   "name": "nitrogen",
   "main": "./lib/nitrogen",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Nitrogen: Nitrous meets Atom",
   "keywords": [],
   "repository": "https://github.com/nitrous-io/nitrogen-dist",
