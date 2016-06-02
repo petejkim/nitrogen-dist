@@ -1,3 +1,7 @@
+## 0.1.10
+* Fixed "Start Workstation" button not to show exceptions
+* Fixed workstation state on toolbar
+
 ## 0.1.9
 * Various bug fixes
 
