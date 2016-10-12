@@ -1,3 +1,10 @@
+## 0.1.12
+* Fixed crashes on sync files
+* Fixed issues with atom 1.12
+
+## 0.1.11
+* Fixed issues with macOS Sierra
+
 ## 0.1.10
 * Fixed "Start Workstation" button not to show exceptions
 * Fixed workstation state on toolbar
